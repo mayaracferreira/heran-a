@@ -1,17 +1,17 @@
 package br.com.model;
 
-public class Carro extends Veiculo  {
-	 
-	//atributos
+public class Carro extends Veiculo {
+
+	// atributos
 	private String marca;
 	private int portas;
 	private int ano;
-	
-	//construtores
+
+	// construtores
 
 	public Carro(String modelo, int velocidade, int passageiros, int combustivel, String marca, int portas, int ano) {
 		super(modelo, velocidade, passageiros, combustivel);
-		
+
 		this.marca = marca;
 		this.portas = portas;
 		this.ano = ano;
@@ -39,16 +39,14 @@ public class Carro extends Veiculo  {
 
 	public void setAno(int ano) {
 		this.ano = ano;
-
+	}
 	
-		super.status ();
+	public void status () {
+		super.status();
 		System.out.println("Marca do carro: " + this.marca);
 		System.out.println("Quantidade de portas: " + this.portas);
-		System.out.println("Ano do carro: "+ this.ano);
-		
-	
-	
-  
-}
+		System.out.println("Ano do carro: " + this.ano);
+
+	}
 
 }
